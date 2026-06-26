@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: >
   If you use this software in your research, please cite both the
-  accompanying manuscript and the software itself.
+  accompanying manuscript and the software archive.
 
 title: "Matter Realizability Audit (MRA)"
 abstract: >
@@ -17,10 +17,12 @@ authors:
   - family-names: Salehizadeh
     given-names: S.
 
-version: "1.0"
+version: "1.0.0"
 date-released: "2026"
 license: BSD-3-Clause
 repository-code: "https://github.com/Matter-Realizability-Audit"
+doi: 10.5281/zenodo.20934770
+url: "https://doi.org/10.5281/zenodo.20934770"
 keywords:
   - general relativity
   - perturbation theory
@@ -30,6 +32,18 @@ keywords:
   - matter realizability
   - Bianchi identity
   - Einstein equations
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Salehizadeh
+      given-names: S.
+  title: "Matter Realizability Audit (MRA) v1.0.0"
+  year: 2026
+  publisher:
+    name: Zenodo
+  doi: 10.5281/zenodo.20934770
+  url: "https://doi.org/10.5281/zenodo.20934770"
 
 references:
   - type: article

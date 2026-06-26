@@ -1,5 +1,6 @@
 # Matter Realizability Audit (MRA)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20934770.svg)](https://doi.org/10.5281/zenodo.20934770)
 ![Python 3.12](https://img.shields.io/badge/Python-3.12-blue)
 ![SymPy 1.14](https://img.shields.io/badge/SymPy-1.14-green)
 ![License BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-lightgrey)
@@ -35,7 +36,7 @@ directly by the reference implementation contained in this repository.
 Matter-Realizability-Audit/
 ├── README.md                   # This file
 ├── LICENSE                     # BSD 3-Clause License
-├── CITATION.cff                # Citation metadata
+├── CITATION.cff                # Citation metadata (DOI-linked)
 ├── flrw_grand_audit_final.py   # Reference implementation of the MRA
 ├── requirements.txt            # Python package dependencies
 └── run_audit.sh                # Shell script to run the audit
@@ -68,16 +69,8 @@ purely symbolic.
 
 ### Installation
 
-Install the required packages using pip:
-
 ```bash
 pip install -r requirements.txt
-```
-
-Or directly:
-
-```bash
-pip install sympy
 ```
 
 ---
@@ -109,10 +102,6 @@ terminal.
 
 ## Expected Runtime
 
-The full audit involves symbolic tensor computations including Christoffel
-symbols, linearized Einstein tensors, covariant divergences, and invariant
-decompositions for a 4-dimensional perturbed FLRW spacetime.
-
 Expected runtimes on a modern workstation (single core, Python 3.12,
 SymPy 1.14):
 
@@ -127,15 +116,12 @@ SymPy 1.14):
 | Invariant decomposition (q², Π²)    | 3–8 min         |
 | **Total (full audit)**              | **~30–60 min**  |
 
-Runtime depends on the host machine and SymPy version. Symbolic
-simplification steps are the dominant cost. The audit is single-threaded.
+Runtime depends on the host machine and SymPy version. The audit is
+single-threaded.
 
 ---
 
 ## Expected Outputs
-
-Upon successful completion, the audit reports structured diagnostic output
-organized according to the hierarchical stages of the MRA.
 
 ### Geometric validation (Levels 0–2)
 
@@ -217,16 +203,22 @@ specific result, search the output for the corresponding diagnostic label
 
 ## Citation
 
-If you use this software in your research, please cite the accompanying
-manuscript:
+If you use this software in your research, please cite both the
+accompanying manuscript and the software archive:
 
+**Manuscript:**
 ```
 Salehizadeh, S., "Assessing Matter Realizability in Perturbative
 Cosmological Spacetimes," manuscript in preparation (2026).
 ```
 
-Citation metadata is also provided in `CITATION.cff` for automated
-reference managers.
+**Software archive:**
+```
+Salehizadeh, S., Matter Realizability Audit (MRA) v1.0.0,
+Zenodo (2026), DOI: 10.5281/zenodo.20934770
+```
+
+Citation metadata is also provided in `CITATION.cff`.
 
 ---
 
