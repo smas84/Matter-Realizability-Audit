@@ -1,0 +1,5 @@
+# Matter Realizability Audit (MRA) — Python dependencies
+# Developed and tested with Python 3.12.3 and SymPy 1.14.0
+# Python >= 3.10 required
+
+sympy>=1.12

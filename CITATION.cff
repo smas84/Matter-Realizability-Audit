@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: >
+  If you use this software in your research, please cite both the
+  accompanying manuscript and the software itself.
+
+title: "Matter Realizability Audit (MRA)"
+abstract: >
+  A symbolic hierarchical diagnostic framework for assessing whether
+  prescribed perturbative spacetime geometries admit physically realizable
+  matter sectors in general relativity. The framework separates geometric
+  consistency from matter-sector realizability through successive stages of
+  benchmark validation, off-shell Bianchi identity verification,
+  conservation diagnostics, closure analysis, residual-ledger construction,
+  invariant decomposition, and realizability assessment.
+
+authors:
+  - family-names: Salehizadeh
+    given-names: S.
+
+version: "1.0"
+date-released: "2026"
+license: BSD-3-Clause
+repository-code: "https://github.com/Matter-Realizability-Audit"
+keywords:
+  - general relativity
+  - perturbation theory
+  - FLRW cosmology
+  - symbolic computation
+  - SymPy
+  - matter realizability
+  - Bianchi identity
+  - Einstein equations
+
+references:
+  - type: article
+    authors:
+      - family-names: Salehizadeh
+        given-names: S.
+    title: >
+      Assessing Matter Realizability in Perturbative Cosmological Spacetimes
+    year: 2026
+    notes: "Manuscript in preparation"
